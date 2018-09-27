@@ -1,17 +1,15 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<h4>Formulario de tab 1</h4>
+<h4>Formulario de tab 2</h4>
 <div class="container">
-	<form style="padding: 12px;" name="form" [formGroup]="form">
+	<form style="padding: 12px;" name="form2" [formGroup]="form2">
 	  <div class="form-group row" >
 	    <label for="campo1" class="col-sm-2 col-form-label">Campo 1</label>
 	    <div class="col-sm-10">
 	      <input 
 	      	type="text" 
-	      	class="form-control"
-	      	value="" 
+	      	class="form-control" 
 	      	required
 	      	formControlName="campo1"
-	      	[ngClass]="{'is-invalid': form.get('campo1').touched && form.get('campo1').invalid} || {'is-valid': form.get('campo1').valid && form.get('campo1').touched}"
+	      	[ngClass]="{'is-invalid': form2.get('campo1').touched && form2.get('campo1').invalid} || {'is-valid': form2.get('campo1').valid && form2.get('campo1').touched}"
 	      	/>
 	      <div class="invalid-feedback " >
 	      	<div class="alert alert-danger"> Campo1 es requerido, ingrese al menos 4 caracteres</div>
@@ -27,9 +25,8 @@
 	      <input 
 	      	type="text" 
 	      	class="form-control"
-	      	value="" 
 	      	formControlName="campo2"
-	      	[ngClass]=" {'ins-invalid': form.get('campo2').touched && form.get('campo2').invalid} " 
+	      	[ngClass]=" {'ins-invalid': form2.get('campo2').touched && form2.get('campo2').invalid} " 
 	      	required 
 	      	/>
 	      <div class="invalid-feedback">
@@ -38,10 +35,10 @@
 	      <br>
 	    </div>
 	  </div>
-	  <div *ngIf=" form.status == 'INVALID' ">
+	  <div *ngIf=" form2.status == 'INVALID' ">
     	<div class="alert alert-danger">El formulario es inválido - Por favor, rellene los campos</div>
     </div>
-    <div *ngIf=" form.status == 'VALID' ">
+    <div *ngIf=" form2.status == 'VALID' ">
     	<div class="alert alert-success">El formulario es válido</div>
     </div>
 	  <br>
@@ -49,7 +46,7 @@
 	</form>
 
 	<div>
-		<a routerLink="/home2/tab1" class="btn btn-info btn-sm">Ir a pantalla 2</a>
+		<a routerLink="/home/tab1" class="btn btn-info btn-sm ">Regresar a pantalla 1</a>
 	</div>
 
 </div>
