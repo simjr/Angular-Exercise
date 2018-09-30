@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {  HomeComponent } from './home/home.component';
-import { Home2Component } from './home2/home2.component';
+import { Tab1Component } from './tab1/tab1.component';
 
 @Component({
   selector: 'app-root',

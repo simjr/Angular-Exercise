@@ -2,39 +2,5 @@
   <h1>
     Bienvenido a mi {{ title }}!
   </h1>
-  <div class="container center">
-  	<div class="card">
-  		<div class="header">
-  			<h4 class="card-title">Ejercicio</h4>
-  			<div class="body">
-				  <tabset>
-					  <tab heading="Tab 1">
-					  	<router-outlet></router-outlet>
-					  </tab>
-					  <tab heading="Tab 2" >Basic content 1</tab>
-					</tabset>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container">
-		<nav aria-label="Page navigation">
-		  <ul class="pagination">
-		    <li class="page-item">
-		      <a class="page-link" routerLink="/home/tab1" aria-label="Previous">
-		        <span aria-hidden="true">&laquo;</span>
-		        <span class="sr-only">Previous</span>
-		      </a>
-		    </li>
-		    <li class="page-item"><a class="page-link" routerLink="/home/tab1">1</a></li>
-		    <li class="page-item"><a class="page-link" routerLink="/home2/tab1">2</a></li>
-		    <li class="page-item">
-		      <a class="page-link" routerLink="/home2/tab1" aria-label="Next">
-		        <span aria-hidden="true">&raquo;</span>
-		        <span class="sr-only">Next</span>
-		      </a>
-		    </li>
-		  </ul>
-		</nav>
-	</div>
+  <router-outlet></router-outlet>
 </div>
