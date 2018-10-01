@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Form1 } from '../form1';
 import { TabDirective } from 'ngx-bootstrap/tabs';
 
 
@@ -12,7 +11,7 @@ export class HomeComponent implements OnInit {
 	//campo1: string;
 	//campo2: string;
 
-  constructor() { }
+  constructor () {}
 
   ngOnInit() {
   }
