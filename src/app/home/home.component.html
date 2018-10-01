@@ -1,5 +1,58 @@
+<div class="container center">
+	<div class="card">
+		<div class="header">
+			<h4 class="card-title">Ejercicio</h4>
+			<div class="body">
+			  <tabset>
+				  <tab heading="Tab 1" >
+				  	<tab1></tab1>
+				  </tab>
+				  <tab heading="Tab 2" >Basic content 1</tab>
+				</tabset>
+				<div class="row">
+					<div class="col-6"><a routerLink="/home/tab1" class="btn btn-info btn-sm">Ir a pantalla 1</a></div>
+					<div class="col-6"><a routerLink="/home2/tab1" class="btn btn-info btn-sm">Ir a pantalla 2</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<nav aria-label="Page navigation">
+	  <ul class="pagination">
+	    <li class="page-item">
+	      <a class="page-link" routerLink="/home/tab1" aria-label="Previous">
+	        <span aria-hidden="true">&laquo;</span>
+	        <span class="sr-only">Previous</span>
+	      </a>
+	    </li>
+	    <li class="page-item"><a class="page-link" routerLink="/home/tab1">1</a></li>
+	    <li class="page-item"><a class="page-link" routerLink="/home2/tab1">2</a></li>
+	    <li class="page-item">
+	      <a class="page-link" routerLink="/home2/tab1" aria-label="Next">
+	        <span aria-hidden="true">&raquo;</span>
+	        <span class="sr-only">Next</span>
+	      </a>
+	    </li>
+	  </ul>
+	</nav>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--The content below is only a placeholder and can be replaced.-->
-<h4>Formulario de tab 1</h4>
+<!-- <h4>Formulario de tab 1</h4>
 <div class="container">
 	<form style="padding: 12px;" name="form" [formGroup]="form">
 	  <div class="form-group row" >
@@ -52,4 +105,4 @@
 		<a routerLink="/home2/tab1" class="btn btn-info btn-sm">Ir a pantalla 2</a>
 	</div>
 
-</div>
+</div> -->
