@@ -1,0 +1,21 @@
+<div class="container">  
+  <table class="table table-sm" *ngIf="holiday$ | async as holidays; else loading">
+    <thead>
+      <tr>
+        <th scope="col">Fecha DD/MM</th>
+        <th scope="col">Tipo</th>
+        <th scope="col">Motivo</th>
+      </tr>
+    </thead>
+    <tbody >
+      <tr *ngFor="let holiday of holidays">
+        <th scope="row">{{holiday.dia}} / {{holiday.mes}}</th>
+        <td>{{holiday.tipo}}</td>
+        <td>{{holiday.motivo}}</td>
+    </tbody>
+  </table>
+  <ng-template #loading>
+    <img src="../../assets/spinner.gif" width="80" height="80" />
+    <span>Buscando feriados, espere...</span>
+  </ng-template>
+</div>

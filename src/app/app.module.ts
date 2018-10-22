@@ -10,13 +10,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { Tab1Component } from './tab1/tab1.component';
 import { ApiService } from './api.service';
+import { Tab2Component } from './tab2/tab2.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    Tab1Component
+    Tab1Component,
+    Tab2Component
   ],
   imports: [
     BrowserModule,
